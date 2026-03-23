@@ -151,7 +151,7 @@ def chart_config(chart):
 
 # ── Sidebar filters ────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### 🔬 Filters")
+    st.markdown("### 🎚️ Filters")
     all_groups = sorted(df["treatment_group"].dropna().unique().tolist())
     selected_groups = st.multiselect(
         "Treatment Groups",
