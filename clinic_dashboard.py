@@ -177,7 +177,7 @@ if df_filtered.empty:
 # ══════════════════════════════════════════════════════════════════════════════
 # ROW 1 — Donut (left)  |  Mortality Bar (right)
 # ══════════════════════════════════════════════════════════════════════════════
-st.markdown("## 📊 Treatment Group Overview")
+st.markdown("## Treatment Group Overview")
 col_left, col_right = st.columns([1, 1.4])
 
 # ── Chart 1: Donut — patient share by treatment group ─────────────────────────
@@ -258,7 +258,7 @@ with col_right:
 # ROW 2 — Age at Diagnosis histogram  (full width)
 # ══════════════════════════════════════════════════════════════════════════════
 st.markdown("---")
-st.markdown("## 🧬 Age at Diagnosis Distribution")
+st.markdown("## Age at Diagnosis Distribution")
 st.caption("Filter by race using the dropdown below.")
 
 race_options = sorted(df_filtered["race"].dropna().unique().tolist())
